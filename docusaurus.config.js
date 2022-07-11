@@ -78,10 +78,10 @@ const config = {
         isCloseable: true,
       },
       navbar: {
-        title: 'Universe',
+        title: ' ',
         logo: {
-          alt: 'My Site Logo',
-          src: 'img/logo.svg',
+          alt: 'Site Logo',
+          src: 'img/logo.png',
         },
         // style: 'dark',
         items: [
