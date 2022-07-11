@@ -123,16 +123,20 @@ const config = {
             title: `Community`,
             items: [
               {
-                label: 'Stack Overflow',
-                href: 'https://stackoverflow.com/questions/tagged/docusaurus',
+                label: 'Discord',
+                href: 'https://titan.tf/discord',
               },
               {
-                label: 'Discord',
-                href: 'https://discordapp.com/invite/docusaurus',
+                label: 'Steam Group',
+                href: 'https://titan.tf/steam',
               },
               {
                 label: 'Twitter',
-                href: 'https://twitter.com/docusaurus',
+                href: 'https://titan.tf/twitter',
+              },
+              {
+                label: 'YouTube',
+                href: 'https://titan.tf/youtube',
               },
             ],
           },
