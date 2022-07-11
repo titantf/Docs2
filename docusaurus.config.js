@@ -6,9 +6,9 @@ const darkCodeTheme = require('prism-react-renderer/themes/dracula');
 
 /** @type {import('@docusaurus/types').Config} */
 const config = {
-  title: 'The Universe',
-  tagline: 'Welcome to the Titan Universe',
-  url: 'https://beta.universe.titan.tf',
+  title: 'Universe',
+  tagline: 'Learn anything and everything Titan.TF',
+  url: 'https://whitepaper.titan.tf',
   baseUrl: '/',
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'warn',
@@ -16,8 +16,8 @@ const config = {
 
   // GitHub pages deployment config.
   // If you aren't using GitHub pages, you don't need these.
-  organizationName: 'facebook', // Usually your GitHub org/user name.
-  projectName: 'docusaurus', // Usually your repo name.
+  organizationName: 'titantf', // Usually your GitHub org/user name.
+  projectName: 'universe', // Usually your repo name.
 
   // Even if you don't use internalization, you can use this field to set useful
   // metadata like html lang. For example, if your site is Chinese, you may want
@@ -37,14 +37,7 @@ const config = {
           // Please change this to your repo.
           // Remove this to remove the "edit this page" links.
           editUrl:
-            'https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/',
-        },
-        blog: {
-          showReadingTime: true,
-          // Please change this to your repo.
-          // Remove this to remove the "edit this page" links.
-          editUrl:
-            'https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/',
+            'https://github.com/TitanTF/Docs/tree/main',
         },
         theme: {
           customCss: require.resolve('./src/css/custom.css'),
@@ -52,26 +45,66 @@ const config = {
       }),
     ],
   ],
+  plugins: [
+    [
+      '@docusaurus/plugin-content-docs',
+      {
+        id: 'api',
+        path: 'api',
+        routeBasePath: 'api',
+        sidebarPath: require.resolve('./sidebars.js'),
+      },
+    ],
+    [
+      '@docusaurus/plugin-content-docs',
+      {
+        id: 'mod',
+        path: 'mod',
+        routeBasePath: 'mod',
+        sidebarPath: require.resolve('./sidebars.js'),
+      },
+    ],
+  ],
 
   themeConfig:
     /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
     ({
+      announcementBar: {
+        id: 'support_us',
+        content:
+          'If you\'d like to contribute to the documentation, pull a fork on <a target="_blank" rel="noopener noreferrer" href="https://github.com/TitanTF/Docs">GitHub</a> 🎉',
+        backgroundColor: '#fafbfc',
+        textColor: '#091E42',
+        isCloseable: true,
+      },
       navbar: {
-        title: 'Titan.TF',
+        title: 'Universe',
         logo: {
           alt: 'My Site Logo',
           src: 'img/logo.svg',
         },
+        // style: 'dark',
         items: [
           {
             type: 'doc',
-            docId: 'intro',
+            docId: 'start',
             position: 'left',
-            label: 'Tutorial',
+            label: 'Docs',
           },
-          {to: '/blog', label: 'Blog', position: 'left'},
           {
-            href: 'https://github.com/facebook/docusaurus',
+            to: '/api/start',    // ./docs/Intro.md
+            label: 'API',
+            position: 'left',
+            activeBaseRegex: `/api/`,
+          },
+          {
+            to: '/mod/start',    // ./docs-api/Intro.md
+            label: 'Moderating',
+            position: 'left',
+            activeBaseRegex: `/mod/`,
+          },
+          {
+            href: 'https://github.com/TitanTF/Docs',
             label: 'GitHub',
             position: 'right',
           },
@@ -85,7 +118,7 @@ const config = {
             items: [
               {
                 label: 'Tutorial',
-                to: '/docs/intro',
+                to: '/tutorial/intro',
               },
             ],
           },
@@ -120,7 +153,7 @@ const config = {
             ],
           },
         ],
-        copyright: `Copyright © ${new Date().getFullYear()} My Project, Inc. Built with Docusaurus.`,
+        copyright: `© Titan.TF ${new Date().getFullYear()}`,
       },
       prism: {
         theme: lightCodeTheme,
