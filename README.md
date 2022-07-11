@@ -32,4 +32,4 @@ npm run build
 ## Credits
 Built with 🦖 Docusaurus v2.
 
-![Powered by Vercel](/img/powered-by-vercel.svg)
+![Powered by Vercel](/static/img/powered-by-vercel.svg)
