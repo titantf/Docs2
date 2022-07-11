@@ -75,7 +75,7 @@ const config = {
       announcementBar: {
         id: 'support_us',
         content:
-          'If you\'d like to contribute to the documentation, pull a fork on <a target="_blank" rel="noopener noreferrer" href="https://github.com/TitanTF/Docs/fork">GitHub</a> 🎉',
+          'If you\'d like to contribute, create a fork on our <a target="_blank" rel="noopener noreferrer" href="https://github.com/TitanTF/Docs/fork">GitHub</a> 🎉',
         backgroundColor: '#fafbfc',
         textColor: '#091E42',
         isCloseable: true,
