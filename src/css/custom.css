@@ -6,13 +6,13 @@
 
 /* You can override the default Infima variables here. */
 :root {
-  --ifm-color-primary: #592e85;
-  --ifm-color-primary-dark: #502978;
-  --ifm-color-primary-darker: #4c2771;
-  --ifm-color-primary-darkest: #3e205d;
-  --ifm-color-primary-light: #623392;
-  --ifm-color-primary-lighter: #663599;
-  --ifm-color-primary-lightest: #743cad;
+  --ifm-color-primary: #005aa8;
+  --ifm-color-primary-dark: #005197;
+  --ifm-color-primary-darker: #004c8f;
+  --ifm-color-primary-darkest: #003f76;
+  --ifm-color-primary-light: #0063b9;
+  --ifm-color-primary-lighter: #0067c1;
+  --ifm-color-primary-lightest: #0075da;
 }
 
 /* For readability concerns, you should choose a lighter palette in dark mode. */
@@ -27,5 +27,12 @@
 }
 
 .footer {
-  background-color: #21262D;
+  background-color: #242526;
+}
+
+.unique-tabs .tabs__item--active {
+  background-color: var(--ifm-tabs-color-active);
+  border: 0;
+  border-radius: var(--ifm-global-radius);
+  color: #fff;
 }

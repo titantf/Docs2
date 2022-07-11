@@ -33,6 +33,9 @@ const config = {
       /** @type {import('@docusaurus/preset-classic').Options} */
       ({
         docs: {
+          remarkPlugins: [
+            [require('@docusaurus/remark-plugin-npm2yarn'), {sync: true}],
+          ],
           sidebarPath: require.resolve('./sidebars.js'),
           // Please change this to your repo.
           // Remove this to remove the "edit this page" links.
@@ -72,13 +75,13 @@ const config = {
       announcementBar: {
         id: 'support_us',
         content:
-          'If you\'d like to contribute to the documentation, pull a fork on <a target="_blank" rel="noopener noreferrer" href="https://github.com/TitanTF/Docs">GitHub</a> 🎉',
+          'If you\'d like to contribute to the documentation, pull a fork on <a target="_blank" rel="noopener noreferrer" href="https://github.com/TitanTF/Docs/fork">GitHub</a> 🎉',
         backgroundColor: '#fafbfc',
         textColor: '#091E42',
         isCloseable: true,
       },
       navbar: {
-        title: ' ',
+        // title: '',
         logo: {
           alt: 'Site Logo',
           src: 'img/logo.png',
@@ -87,18 +90,18 @@ const config = {
         items: [
           {
             type: 'doc',
-            docId: 'start',
+            docId: 'home',
             position: 'left',
-            label: 'Docs',
+            label: 'Guides',
           },
           {
-            to: '/api/start',    // ./docs/Intro.md
+            to: '/api/home',    // ./docs/Intro.md
             label: 'API',
             position: 'left',
             activeBaseRegex: `/api/`,
           },
           {
-            to: '/mod/start',    // ./docs-api/Intro.md
+            to: '/mod/home',    // ./docs-api/Intro.md
             label: 'Moderating',
             position: 'left',
             activeBaseRegex: `/mod/`,
@@ -114,7 +117,10 @@ const config = {
         style: 'dark',
         links: [
           {
-            title: 'Community',
+            title: `© Titan.TF ${new Date().getFullYear()}. `,
+          },
+          {
+            title: `Community`,
             items: [
               {
                 label: 'Stack Overflow',
@@ -131,16 +137,16 @@ const config = {
             ],
           },
           {
-            title: 'More',
+            title: 'Contribute',
             items: [
               {
-                label: 'GitHub',
+                label: 'Edit on GitHub',
                 href: 'https://github.com/facebook/docusaurus',
               },
             ],
           },
         ],
-        copyright: `© Titan.TF ${new Date().getFullYear()}`,
+        // copyright: `Built with 🦖.`,
       },
       prism: {
         theme: lightCodeTheme,
