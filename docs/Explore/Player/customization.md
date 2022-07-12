@@ -1,8 +1,8 @@
 ---
-sidebar_position: 4
+sidebar_position: 1
 ---
 
-# Commands
+# Customizations
 
 This platform is a one stop place for everything Titan. You will discover the basics to get you started, as well as awesome features you will one day come across.
 

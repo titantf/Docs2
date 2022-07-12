@@ -7,7 +7,7 @@ const darkCodeTheme = require('prism-react-renderer/themes/dracula');
 /** @type {import('@docusaurus/types').Config} */
 const config = {
   title: 'Universe',
-  tagline: 'Learn anything and everything Titan.TF',
+  tagline: 'Learn anything and everything about Titan',
   url: 'https://whitepaper.titan.tf',
   baseUrl: '/',
   onBrokenLinks: 'throw',

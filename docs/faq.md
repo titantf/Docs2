@@ -1,16 +1,16 @@
 ---
-sidebar_position: 1
+sidebar_position: 3
 ---
 
 import Tabs from '@theme/Tabs';
 import TabItem from '@theme/TabItem';
 
-# The Universe
+# FAQ
 
 ## Hang out, and have fun! 🎉
-With over 400K unique players from over 190 countries, we are a constantly evolving network of custom [Team Fortress 2](https://teamfortress.com) servers available worldwide.
+With over 400K unique players from over 190 countries, we are a constantly evolving network of custom Team Fortress 2 servers available worldwide.
 
-<!-- All of the features found in the Titan Universe are documented here with great detail. You will discover the basics to get you started as a new player, as well as advanced tricks you can utilize if you are an expert. -->
+All of the features found in the Titan Universe are documented here with great detail. You will discover the basics to get you started as a new player, as well as advanced tricks you can utilize if you are an expert.
 
 :::caution
 This is a revised adaptation of the legacy documentation which was not well maintained. This is currently a big work in progress, you can expect the final product to largely differ.
