@@ -3,12 +3,6 @@
 ## Hang out, and have fun! 🎉
 With over 400K unique players from over 190 countries, we are a constantly evolving network of custom [Team Fortress 2](https://teamfortress.com) servers available worldwide.
 
-<!-- All of the features found in the Titan Universe are documented here with great detail. You will discover the basics to get you started as a new player, as well as advanced tricks you can utilize if you are an expert. -->
-
-:::caution
-This is a revised adaptation of the legacy documentation which was not well maintained. This is currently a big work in progress, you can expect the final product to largely differ.
-:::
-
 ![banner](https://titan.tf/images/17.png)
 
 #### ❤️ More than just another gaming community
@@ -46,6 +40,36 @@ npm run start
 ### Build
 ```
 npm run build
+```
+
+### Folder Structure
+```
+Docs
+├── docs // Guides
+│   ├── home.md
+│   ├── faq.md
+│   ├── commands.md
+├── api // API
+│   ├── v1 // current version
+│   │   └── REST
+│   │       └── usage.md
+│   │   └── Titan Law
+│   │       └── usage.md
+│   └── home.md
+├── mod // Moderating
+│   ├── home.md
+├── src
+│   ├── css
+│   │   └── custom.css
+│   └── pages
+│       ├── styles.module.css
+│       └── index.js
+├── static
+│   └── img
+├── docusaurus.config.js
+├── package.json
+├── README.md
+└── sidebars.js
 ```
 
 ## Credits

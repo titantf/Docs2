@@ -65,6 +65,36 @@ This is not a necessary step to update the documentation. It builds the website 
 npm run build
 ```
 
+### Folder Structure
+```c
+Docs
+├── docs // Guides
+│   ├── home.md
+│   ├── faq.md
+│   ├── commands.md
+├── api // API
+│   ├── v1 // current version
+│   │   └── REST
+│   │       └── usage.md
+│   │   └── Titan Law
+│   │       └── usage.md
+│   └── home.md
+├── mod // Moderating
+│   ├── home.md
+├── src
+│   ├── css
+│   │   └── custom.css
+│   └── pages
+│       ├── styles.module.css
+│       └── index.js
+├── static
+│   └── img
+├── docusaurus.config.js
+├── package.json
+├── README.md
+└── sidebars.js
+```
+
 ## Credits
 Built with 🦖 Docusaurus v2.
 
