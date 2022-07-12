@@ -1,8 +1,8 @@
 ---
-sidebar_position: 3
+sidebar_position: 2
 ---
 
-# Commands
+# Supply Drops
 
 This platform is a one stop place for everything Titan. You will discover the basics to get you started, as well as awesome features you will one day come across.
 

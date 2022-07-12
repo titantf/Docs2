@@ -11,11 +11,10 @@ Refer to this [guide](https://docusaurus.io/docs/markdown-features) if you need 
 
 ### Prerequisites
 - [node](https://nodejs.org/en)
-- [npm](https://www.npmjs.com)
+- [npm](https://www.npmjs.com) or [Yarn](https://yarnpkg.com)
 
 ### Installation
 ```
-git clone https://github.com/TitanTF/Docs.git
 npm install
 ```
 
